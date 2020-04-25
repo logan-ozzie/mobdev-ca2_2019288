@@ -28,12 +28,18 @@ export class ApiService {
     }
 
     getQuote(id) {
-        return this.http.get('http://www.breakingbadapi.com/api/quotes/${id}');
+        return this.http.get(`http://www.breakingbadapi.com/api/quotes/${id}`);
     }
 
     getDeaths() {
-        return this.http.get(`http://www.breakingbadapi.com/api/death-count?name=Gustavo+Fring`)
+   //     return this.http.get(`http://www.breakingbadapi.com/api/death-count?name=Gustavo+Fring`)
+        return this.http.get(`http://www.breakingbadapi.com/api/deaths`)
     }
+
+    getDeath(id) {
+        return this.http.get(`http://www.breakingbadapi.com/api/deaths/${id}`)
+    }
+
 
 }
 
