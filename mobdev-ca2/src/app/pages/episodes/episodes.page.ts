@@ -14,7 +14,8 @@ export class EpisodesPage implements OnInit {
 
  // constructor(private router: Router, private api: ApiService) { }
     constructor(private router: Router, private http: HttpClient) {}
-  ngOnInit() {
+  
+    ngOnInit() {
    //   this.episodes = this.api.getEpisodes();
    this.episodes = this.http.get('https://breakingbadapi.com/api/episodes');
       this.episodes.subscribe(data => {
@@ -25,4 +26,11 @@ export class EpisodesPage implements OnInit {
       let episodeId = episode.episode_id;
       this.router.navigateByUrl(`/tabs/episodes/${episodeId}`);
   }
+
+
+
+
+
 }
+
+
