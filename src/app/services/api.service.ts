@@ -13,7 +13,7 @@ export class ApiService {
     }
 
     getEpisode(id) {
-        return this.http.get(`http://www.breakingbadapi.com/api/episodes/${id}`);
+        return this.http.get('http://www.breakingbadapi.com/api/episodes/${id}');
     }
 
     getCharacters() {
@@ -21,23 +21,23 @@ export class ApiService {
     }
 
     getCharacter(id) {
-        return this.http.get(`http://www.breakingbadapi.com/api/characters/${id}`);
+        return this.http.get('http://www.breakingbadapi.com/api/characters/${id}');
     }
     getQuotes() {
         return this.http.get('http://www.breakingbadapi.com/api/quotes')
     }
 
     getQuote(id) {
-        return this.http.get(`http://www.breakingbadapi.com/api/quotes/${id}`);
+        return this.http.get('http://www.breakingbadapi.com/api/quotes/${id}');
     }
 
     getDeaths() {
    //     return this.http.get(`http://www.breakingbadapi.com/api/death-count?name=Gustavo+Fring`)
-        return this.http.get(`http://www.breakingbadapi.com/api/deaths`)
+        return this.http.get('http://www.breakingbadapi.com/api/deaths')
     }
 
     getDeath(id) {
-        return this.http.get(`http://www.breakingbadapi.com/api/deaths/${id}`)
+        return this.http.get('http://www.breakingbadapi.com/api/deaths/${id}')
     }
 
 
