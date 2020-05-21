@@ -7,6 +7,7 @@ const routes: Routes = [
     path: 'death-details',
     loadChildren: () => import('./pages/death-details/death-details.module').then( m => m.DeathDetailsPageModule)
   }
+  
 ];
 
 @NgModule({
